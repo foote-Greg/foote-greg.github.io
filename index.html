@@ -1,0 +1,550 @@
+<html>
+
+<head>
+    <style>
+        .condo-header-image {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 350px !important;
+            border-bottom: 8px solid #264980;
+            margin-bottom: 30px;
+        }
+
+        .condo-header-image img.bck-image {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+        }
+
+        .condo-header {
+            display: flex;
+            flex: wrap;
+        }
+
+        .info-panel {
+            background-color: #deebff;
+            color: #264980;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .info-panel.roi {
+            display: flex;
+            flex: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .info-panel.roi p {
+            font-size: 14px;
+            width: 65%;
+        }
+
+        .info-panel.roi a {
+            background-color: #264980;
+            color: white;
+            width: auto;
+            border-radius: 3px;
+            border: 2 px solid white;
+            padding: 5px 10px;
+            height: 32px;
+            margin: auto;
+        }
+
+
+        .info-panel.roi a:hover {
+            color: #264980;
+            background-color: white;
+            border: 2 px solid #264980;
+        }
+
+
+        .condo-info-panel {
+            margin: 60px 0;
+        }
+
+        .condo-info-panel .info-left {
+            margin-right: 30px;
+        }
+
+        .condo-info-panel iframe {
+            width: 100%;
+        }
+
+        table.condo {
+            margin: 0;
+        }
+
+        table.condo.info-tbl {
+            width: 100%;
+        }
+
+        table.condo.info-tbl tr {
+            padding: 0;
+        }
+
+        table.condo.info-tbl tr td {
+            padding: 0;
+        }
+
+        table.condo.info-tbl tr td ul {
+            padding: 4px;
+            list-style: none;
+            margin: 0;
+        }
+
+        table.condo.info-tbl tr td ul li {
+            padding: 3px 6px;
+        }
+
+        table.condo.info-tbl tr td ul li:nth-child(even) {
+            background-color: #deebff;
+        }
+
+        table.condo.floorplan-info {
+            width: 100%;
+            color: #000;
+        }
+
+        table.condo.info-tbl table {
+            width: 100%;
+        }
+
+        table.condo.floorplan-info thead tr,
+        table.condo.info-tbl p {
+            background-color: #264980;
+            color: white;
+            padding: 3px 6px;
+            width: 100%;
+            margin: 0;
+        }
+
+        table.condo.floorplan-info tr td {
+            padding: 3px 6px;
+        }
+
+        table.condo.floorplan-info tbody tr:nth-child(even) {
+            background-color: #deebff;
+        }
+
+        .condo-video iframe {
+            height: 720px;
+            width: 100%;
+        }
+
+        .condo-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .condo-amenities li {
+            background-color: #deebff;
+            padding: 7px 14px;
+            margin-right: 10px;
+            color: #264980;
+            margin-bottom: 10px;
+        }
+
+        .condo-badges {
+            display: flex;
+            flex: wrap;
+            width: 50%;
+        }
+
+        .condo-badges .condo-badge {
+            background-color: #deebff;
+            padding: 4px 14px;
+            margin-right: 14px;
+            color: #264980;
+        }
+
+        .condo-badges .condo-badge label {
+            font-weight: bold;
+        }
+
+        .post-content-container {
+            margin: 12px 0;
+            padding: 20px;
+        }
+
+        .post-content-container .post-content-left {
+            width: 70%;
+            float: left;
+        }
+
+        .post-content-container .post-content-right {
+            width: 25%;
+            float: right;
+        }
+
+        div.img-column {
+            background-position-y: inherit !important;
+            width: 40% !important;
+            min-width: 500px !important;
+        }
+
+        div.copy-column {
+            width: 60% !important;
+        }
+
+        .md-team.single-column-fold-intro .agent .img-container .image {
+            width: 450px;
+            height: 550px;
+        }
+
+        .md-team.single-column-fold-intro .agent .info-container .view-more-content {
+            height: 343px !important;
+        }
+
+        div.quick-condo-links {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        div.quick-condo-link-section {
+            margin: 40px 0 0 40px;
+        }
+
+        div.quick-condo-link-section label {
+            font-size: 34px;
+            font: serif;
+            font-weight: bolder;
+            color: #0c3583;
+            margin-left: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform:capitalize;
+        }
+
+
+
+        div.quick-condo-link-section ul.wrap-right {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        div.quick-condo-link-section ul li {
+            margin: 11px;
+            padding: 11px;
+            background-color: #3a8fc7;
+            border: 1px solid #3a8fc7;
+            border-radius: 3px;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            width: 250px;
+            list-style: none;
+        }
+
+        div.quick-condo-link-section ul li:hover {
+            background-color: white;
+            border-color: #0a66a3;
+            border: 1px solid #0a66a3;
+            color: #0a66a3;
+        }
+        div.quick-condo-link-section ul li a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div.quick-condo-link-section ul li:hover a, div.quick-condo-link-section ul li a:hover{
+            color: #0a66a3;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div.quick-condo-link-section ul li a:hover{
+            color: #ec840d;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="quick-condo-links">
+        <div class="quick-condo-link-section">
+            <label>ORANGE BEACH CONDOS</label>
+
+            <ul class="wrap-right">
+
+                <li><a target="_blank" href="/condos/Admirals-Quarters">Admirals Quarters</a></li>
+                <li><a target="_blank" href="/condos/Back-Bay">Back Bay</a></li>
+                <li><a target="_blank" href="/condos/Bayshore-Towers">Bayshore Towers</a></li>
+                <li><a target="_blank" href="/condos/Bayview">Bayview</a></li>
+                <li><a target="_blank" href="/condos/Bella-Luna">Bella Luna</a></li>
+                <li><a target="_blank" href="/condos/Bluewater">Bluewater</a></li>
+                <li><a target="_blank" href="/condos/Broadmoor">Broadmoor</a></li>
+
+                <li><a target="_blank" href="/condos/Bayshore-Towers">Bayshore Towers</a></li>
+                <li><a target="_blank" href="/condos/Bayview">Bayview</a></li>
+                <li><a target="_blank" href="/condos/Bella-Luna">Bella Luna</a></li>
+                <li><a target="_blank" href="/condos/Bluewater">Bluewater</a></li>
+                <li><a target="_blank" href="/condos/Broadmoor">Broadmoor</a></li>
+
+                <li><a target="_blank" href="/condos/Caribe">Caribe</a></li>
+                <li><a target="_blank" href="/condos/Casa-del-Marina">Casa del Marina</a></li>
+                <li><a target="_blank" href="/condos/Charter-Landing">Charter Landing</a></li>
+                <li><a target="_blank" href="/condos/Cotton-Bayou">Cotton Bayou</a></li>
+                <li><a target="_blank" href="/condos/Dolphin-Harbor">Dolphin Harbor</a></li>
+                <li><a target="_blank" href="/condos/Dolphin-Key">Dolphin Key</a></li>
+                <li><a target="_blank" href="/condos/Driftwood-Landing">Driftwood Landing</a></li>
+                <li><a target="_blank" href="/condos/Emerald-Key">Emerald Key</a></li>
+                <li><a target="_blank" href="/condos/Emerald-Skye">Emerald Skye</a></li>
+                <li><a target="_blank" href="/condos/Escapes">Escapes</a></li>
+                <li><a target="_blank" href="/condos/Fish-Camp">Fish Camp</a></li>
+                <li><a target="_blank" href="/condos/Four-Seasons">Four Seasons</a></li>
+                <li><a target="_blank" href="/condos/Four-Winds">Four Winds</a></li>
+                <li><a target="_blank" href="/condos/Grand-Caribbean">Grand Caribbean</a></li>
+                <li><a target="_blank" href="/condos/Harbor-Cove">Harbor Cove</a></li>
+                <li><a target="_blank" href="/condos/Harbour-Place">Harbour Place</a></li>
+                <li><a target="_blank" href="/condos/Jubilee-Landing">Jubilee Landing</a></li>
+                <li><a target="_blank" href="/condos/Legacy Key">Legacy Key</a></li>
+                <li><a target="_blank" href="/condos/Lei-Lani">Lei Lani</a></li>
+                <li><a target="_blank" href="/condos/Magnolia-Key-Townhomes">Magnolia Key Townhomes</a></li>
+                <li><a target="_blank" href="/condos/Mariner-Pass">Mariner Pass</a></li>
+                <li><a target="_blank" href="/condos/Marlin-Key">Marlin Key</a></li>
+                <li><a target="_blank" href="/condos/Mariner-Lakes">Mariner Lakes</a></li>
+                <li><a target="_blank" href="/condos/Ole-River">Ole River</a></li>
+                <li><a target="_blank" href="/condos/Opal">Opal</a></li>
+                <li><a target="_blank" href="/condos/Palm-Beach">Palm Beach</a></li>
+                <li><a target="_blank" href="/condos/Pelican-Pointe">Pelican Pointe</a></li>
+                <li><a target="_blank" href="/condos/Perdido-Dunes">Perdido Dunes</a></li>
+                <li><a target="_blank" href="/condos/Perdido-Dunes-Tower">Perdido Dunes Tower</a></li>
+                <li><a target="_blank" href="/condos/Perdido-Grande">Perdido Grande</a></li>
+                <li><a target="_blank" href="/condos/Perdido-Grande-Phase-II">Perdido Grande Phase II</a></li>
+                <li><a target="_blank" href="/condos/Perdido-Place">Perdido Place</a></li>
+                <li><a target="_blank" href="/condos/Perdido-Quay">Perdido Quay</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-East">Phoenix East</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-Gulf-Towers">Phoenix Gulf Towers</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-Orange-Beach">Phoenix Orange Beach</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-Orange-Beach-II">Phoenix Orange Beach II</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-West">Phoenix West</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-West-II">Phoenix West II</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-I">Phoenix I</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-II">Phoenix II</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-III">Phoenix III</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-IV">Phoenix IV</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-V">Phoenix V</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-VI">Phoenix VI</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-VII">Phoenix VII</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-VIII">Phoenix VIII</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-IX">Phoenix IX</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-X">Phoenix X</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-on-the-Bay">Phoenix on the Bay</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-on-the-Bay-II">Phoenix on the Bay II</a></li>
+                <li><a target="_blank" href="/condos/Porto-del-Sol">Porto del Sol</a></li>
+                <li><a target="_blank" href="/condos/Portside">Portside</a></li>
+                <li><a target="_blank" href="/condos/Regency-Isle">Regency Isle</a></li>
+                <li><a target="_blank" href="/condos/River-Chase">River Chase</a></li>
+                <li><a target="_blank" href="/condos/Romar-Beach">Romar Beach</a></li>
+                <li><a target="_blank" href="/condos/Romar-House">Romar House</a></li>
+                <li><a target="_blank" href="/condos/Romar-Lakes">Romar Lakes</a></li>
+                <li><a target="_blank" href="/condos/Romar-Place">Romar Place</a></li>
+                <li><a target="_blank" href="/condos/Romar-Tower">Romar Tower</a></li>
+                <li><a target="_blank" href="/condos/Romar-Village">Romar Village</a></li>
+                <li><a target="_blank" href="/condos/Seachase">Seachase</a></li>
+                <li><a target="_blank" href="/condos/Seascape">Seascape</a></li>
+                <li><a target="_blank" href="/condos/Seaside-Beach-&-Racquet">Seaside Beach & Racquet</a></li>
+                <li><a target="_blank" href="/condos/Shoalwater">Shoalwater</a></li>
+                <li><a target="_blank" href="/condos/Silver Beach">Silver Beach</a></li>
+                <li><a target="_blank" href="/condos/Spyglass">Spyglass</a></li>
+                <li><a target="_blank" href="/condos/Sugar-Beach">Sugar Beach</a></li>
+                <li><a target="_blank" href="/condos/Summerchase">Summerchase</a></li>
+                <li><a target="_blank" href="/condos/Summer-Breeze">Summer Breeze</a></li>
+                <li><a target="_blank" href="/condos/Summer-House">Summer House</a></li>
+                <li><a target="_blank" href="/condos/Sunswept">Sunswept</a></li>
+                <li><a target="_blank" href="/condos/The-Breakers">The Breakers</a></li>
+                <li><a target="_blank" href="/condos/The-Enclave">The Enclave</a></li>
+                <li><a target="_blank" href="/condos/The-Moorings">The Moorings</a></li>
+                <li><a target="_blank" href="/condos/The-Palms">The Palms</a></li>
+                <li><a target="_blank" href="/condos/The-Pass">The Pass</a></li>
+                <li><a target="_blank" href="/condos/The-Sands-at-Romar-Beach">The Sands at Romar Beach</a></li>
+                <li><a target="_blank" href="/condos/The-Wharf">The Wharf</a></li>
+                <li><a target="_blank" href="/condos/The-Yacht-Club">The Yacht Club</a></li>
+                <li><a target="_blank" href="/condos/The-Yachtsman">The Yachtsman</a></li>
+                <li><a target="_blank" href="/condos/Tidewater">Tidewater</a></li>
+                <li><a target="_blank" href="/condos/Tradewinds">Tradewinds</a></li>
+                <li><a target="_blank" href="/condos/Turquoise-Place">Turquoise Place</a></li>
+                <li><a target="_blank" href="/condos/Villas-by-the-Bay">Villas by the Bay</a></li>
+                <li><a target="_blank" href="/condos/Vista-Bella">Vista Bella</a></li>
+                <li><a target="_blank" href="/condos/Walker-Key">Walker Key</a></li>
+                <li><a target="_blank" href="/condos/Wind-Drift">Wind Drift</a></li>
+                <li><a target="_blank" href="/condos/Windward-Pointe">Windward Pointe</a></li>
+                <li><a target="_blank" href="/condos/White-Caps">White Caps</a></li>
+                <li><a target="_blank" href="/condos/Wolf-Bay-Villas">Wolf Bay Villas</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="quick-condo-link-section">
+            <label>GULF SHORES CONDOS</label>
+
+            <ul class="wrap-right">
+
+                <li><a target="_blank" href="/condos/Alabama-Sands">Alabama Sands</a></li>
+                <li><a target="_blank" href="/condos/Bayjohn">Bayjohn</a></li>
+                <li><a target="_blank" href="/condos/Bel-Sole">Bel Sole</a></li>
+                <li><a target="_blank" href="/condos/Beachcomber">Beachcomber</a></li>
+                <li><a target="_blank" href="/condos/Beachview">Beachview</a></li>
+                <li><a target="_blank" href="/condos/Beach-Club">Beach Club</a></li>
+                <li><a target="_blank" href="/condos/Beach-Front">Beach Front</a></li>
+                <li><a target="_blank" href="/condos/Beach-Life">Beach Life</a></li>
+                <li><a target="_blank" href="/condos/Beachwalk">Beachwalk</a></li>
+                <li><a target="_blank" href="/condos/Boardwalk">Boardwalk</a></li>
+                <li><a target="_blank" href="/condos/Buena-Vista">Buena Vista</a></li>
+                <li><a target="_blank" href="/condos/Caribbean">Caribbean</a></li>
+                <li><a target="_blank" href="/condos/Casa-Del-Sol">Casa Del Sol</a></li>
+                <li><a target="_blank" href="/condos/Castaways">Castaways</a></li>
+                <li><a target="_blank" href="/condos/Clearwater">Clearwater</a></li>
+                <li><a target="_blank" href="/condos/ClubHouse-Drive">ClubHouse Drive</a></li>
+                <li><a target="_blank" href="/condos/Colonnades">Colonnades</a></li>
+                <li><a target="_blank" href="/condos/Compass-Point">Compass Point</a></li>
+                <li><a target="_blank" href="/condos/Cotton-Creek-Estates">Cotton Creek Estates</a></li>
+                <li><a target="_blank" href="/condos/The-Cove">The Cove</a></li>
+                <li><a target="_blank" href="/condos/Crows-Nest">Crows Nest</a></li>
+                <li><a target="_blank" href="/condos/Crystal-Shores">Crystal Shores</a></li>
+                <li><a target="_blank" href="/condos/Crystal-Shores-West">Crystal Shores West</a></li>
+                <li><a target="_blank" href="/condos/Crystal-Tower">Crystal Tower</a></li>
+                <li><a target="_blank" href="/condos/Dolphin-View">Dolphin View</a></li>
+                <li><a target="_blank" href="/condos/Dolphin-Villas">Dolphin Villas</a></li>
+                <li><a target="_blank" href="/condos/Driftwood-Towers">Driftwood Towers</a></li>
+                <li><a target="_blank" href="/condos/The-Dunes">The Dunes</a></li>
+                <li><a target="_blank" href="/condos/Dunewalk">Dunewalk</a></li>
+                <li><a target="_blank" href="/condos/Edgewater">Edgewater</a></li>
+                <li><a target="_blank" href="/condos/Edgewater West">Edgewater West</a></li>
+                <li><a target="_blank" href="/condos/Emerald-Seas">Emerald Seas</a></li>
+                <li><a target="_blank" href="/condos/Enclave-at-Oak-Hill">Enclave at Oak Hill</a></li>
+                <li><a target="_blank" href="/condos/Evening-Tide">Evening Tide</a></li>
+                <li><a target="_blank" href="/condos/Fort-Morgan-Townhomes">Fort Morgan Townhomes</a></li>
+                <li><a target="_blank" href="/condos/Four-Cs">Four C's</a></li>
+                <li><a target="_blank" href="/condos/Gentle-Waves">Gentle Waves</a></li>
+                <li><a target="_blank" href="/condos/Gentle-Winds-East">Gentle Winds East</a></li>
+                <li><a target="_blank" href="/condos/Grand-Beach-Resort">Grand Beach Resort</a></li>
+                <li><a target="_blank" href="/condos/Gulf-House">Gulf House</a></li>
+                <li><a target="_blank" href="/condos/Gulf-Shores-Plantation">Gulf Shores Plantation</a></li>
+                <li><a target="_blank" href="/condos/Gulf-Tower">Gulf Tower</a></li>
+                <li><a target="_blank" href="/condos/Gulf-View">Gulf View</a></li>
+                <li><a target="_blank" href="/condos/Gulf-Village">Gulf Village</a></li>
+                <li><a target="_blank" href="/condos/Gulfside-Townhomes">Gulfside Townhomes</a></li>
+                <li><a target="_blank" href="/condos/Harbor-House">Harbor House</a></li>
+                <li><a target="_blank" href="/condos/Heron-Landing">Heron Landing</a></li>
+                <li><a target="_blank" href="/condos/The-Indies">The Indies</a></li>
+                <li><a target="_blank" href="/condos/Island-Club">Island Club</a></li>
+                <li><a target="_blank" href="/condos/Island-Royale">Island Royale</a></li>
+                <li><a target="_blank" href="/condos/Island-Shores">Island Shores</a></li>
+                <li><a target="_blank" href="/condos/Island-Sunrise">Island Sunrise</a></li>
+                <li><a target="_blank" href="/condos/Island-Tower">Island Tower</a></li>
+                <li><a target="_blank" href="/condos/Island-Winds">Island Winds</a></li>
+                <li><a target="_blank" href="/condos/Kiva-Dunes-Lodge">Kiva Dunes Lodge</a></li>
+                <li><a target="_blank" href="/condos/Kiva-Lodge">Kiva Lodge</a></li>
+                <li><a target="_blank" href="/condos/Lagoon-East">Lagoon East</a></li>
+                <li><a target="_blank" href="/condos/Lagoon-Landing">Lagoon Landing</a></li>
+                <li><a target="_blank" href="/condos/Lagoon-Run">Lagoon Run</a></li>
+                <li><a target="_blank" href="/condos/Lagoon-Sun">Lagoon Sun</a></li>
+                <li><a target="_blank" href="/condos/Lagoon-Tower">Lagoon Tower</a></li>
+                <li><a target="_blank" href="/condos/Lagoon-View">Lagoon View</a></li>
+                <li><a target="_blank" href="/condos/Laguna-Bella">Laguna Bella</a></li>
+                <li><a target="_blank" href="/condos/Laguna-Breeze">Laguna Breeze</a></li>
+                <li><a target="_blank" href="/condos/The-Landing">The Landing</a></li>
+                <li><a target="_blank" href="/condos/Laguna-Sands">Laguna Sands</a></li>
+                <li><a target="_blank" href="/condos/Lani-Kai">Lani Kai</a></li>
+                <li><a target="_blank" href="/condos/Las-Palmas">Las Palmas</a></li>
+                <li><a target="_blank" href="/condos/Legacy">Legacy</a></li>
+                <li><a target="_blank" href="/condos/Lighthouse">Lighthouse</a></li>
+                <li><a target="_blank" href="/condos/The-Links">The Links</a></li>
+                <li><a target="_blank" href="/condos/Links-Golf-Villas">Links Golf Villas</a></li>
+                <li><a target="_blank" href="/condos/Martinique-on-the-Gulf">Martinique on the Gulf</a></li>
+                <li><a target="_blank" href="/condos/Moonraker">Moonraker</a></li>
+                <li><a target="_blank" href="/condos/Mustique">Mustique</a></li>
+                <li><a target="_blank" href="/condos/Navy-Cove">Navy Cove</a></li>
+                <li><a target="_blank" href="/condos/Navy-Cove-Harbor">Navy Cove Harbor</a></li>
+                <li><a target="_blank" href="/condos/Ocean-Blue">Ocean Blue</a></li>
+                <li><a target="_blank" href="/condos/Oceania">Oceania</a></li>
+                <li><a target="_blank" href="/condos/Ocean-Echo">Ocean Echo</a></li>
+                <li><a target="_blank" href="/condos/Ocean-House">Ocean House</a></li>
+                <li><a target="_blank" href="/condos/Ocean-Reef">Ocean Reef</a></li>
+                <li><a target="_blank" href="/condos/One-Club">One Club</a></li>
+                <li><a target="_blank" href="/condos/Paradise-East">Paradise East</a></li>
+                <li><a target="_blank" href="/condos/Paradise-Isle">Paradise Isle</a></li>
+                <li><a target="_blank" href="/condos/Peninsula-Condos">Peninsula Condos</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-All-Suites">Phoenix All Suites</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-All-Suites-West">Phoenix All Suites West</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-Gulf-Shores">Phoenix Gulf Shores</a></li>
+                <li><a target="_blank" href="/condos/Phoenix-Gulf-Shores-II">Phoenix Gulf Shores II</a></li>
+                <li><a target="_blank" href="/condos/Plantation-Palms">Plantation Palms</a></li>
+                <li><a target="_blank" href="/condos/Pleasure-Isle-Villas">Pleasure Isle Villas</a></li>
+                <li><a target="_blank" href="/condos/Points-South">Points South</a></li>
+                <li><a target="_blank" href="/condos/Racquet-Club">Racquet Club</a></li>
+                <li><a target="_blank" href="/condos/Regatta">Regatta</a></li>
+                <li><a target="_blank" href="/condos/Regency">Regency</a></li>
+                <li><a target="_blank" href="/condos/Regency-Club">Regency Club</a></li>
+                <li><a target="_blank" href="/condos/Rest-Area-East">Rest Area East</a></li>
+                <li><a target="_blank" href="/condos/The-Ridge">The Ridge</a></li>
+                <li><a target="_blank" href="/condos/The-Rookery">The Rookery</a></li>
+                <li><a target="_blank" href="/condos/Rookery-III">Rookery III</a></li>
+                <li><a target="_blank" href="/condos/Royal-Gulf-B-&-R">Royal Gulf B & R</a></li>
+                <li><a target="_blank" href="/condos/Royal-Palms">Royal Palms</a></li>
+                <li><a target="_blank" href="/condos/Sailboat-Bay">Sailboat Bay</a></li>
+                <li><a target="_blank" href="/condos/San-Carlos">San Carlos</a></li>
+                <li><a target="_blank" href="/condos/Sand-Dollar">Sand Dollar</a></li>
+                <li><a target="_blank" href="/condos/Sandpiper">Sandpiper</a></li>
+                <li><a target="_blank" href="/condos/The-Sands-West-Beach">The Sands - West Beach</a></li>
+                <li><a target="_blank" href="/condos/Sandy-Shores-West">Sandy Shores West</a></li>
+                <li><a target="_blank" href="/condos/Sanibel">Sanibel</a></li>
+                <li><a target="_blank" href="/condos/Sea-&-Sun">Sea & Sun</a></li>
+                <li><a target="_blank" href="/condos/Sea-Breeze">Sea Breeze</a></li>
+                <li><a target="_blank" href="/condos/Seasons-by-the-Sea">Seasons by the Sea</a></li>
+                <li><a target="_blank" href="/condos/Seacrest">Seacrest</a></li>
+                <li><a target="_blank" href="/condos/Sea-Glass">Sea Glass</a></li>
+                <li><a target="_blank" href="/condos/Sea-Horse">Sea Horse</a></li>
+                <li><a target="_blank" href="/condos/Sea-Oats">Sea Oats</a></li>
+                <li><a target="_blank" href="/condos/Seawind">Seawind</a></li>
+                <li><a target="_blank" href="/condos/Spyglass">Spyglass</a></li>
+                <li><a target="_blank" href="/condos/Seaview">Seaview</a></li>
+                <li><a target="_blank" href="/condos/Southern-Sands">Southern Sands</a></li>
+                <li><a target="_blank" href="/condos/Southern-Shores">Southern Shores</a></li>
+                <li><a target="_blank" href="/condos/Southwinds">Southwinds</a></li>
+                <li><a target="_blank" href="/condos/South-Pointe">South Pointe</a></li>
+                <li><a target="_blank" href="/condos/Spinnaker-Pointe">Spinnaker Pointe</a></li>
+                <li><a target="_blank" href="/condos/Summer-Fun">Summer Fun</a></li>
+                <li><a target="_blank" href="/condos/Summer-House-West">Summer House West</a></li>
+                <li><a target="_blank" href="/condos/Sun-Chase">Sun Chase</a></li>
+                <li><a target="_blank" href="/condos/Sundial">Sundial</a></li>
+                <li><a target="_blank" href="/condos/Sun-Princess">Sun Princess</a></li>
+                <li><a target="_blank" href="/condos/Sunrise-Village">Sunrise Village</a></li>
+                <li><a target="_blank" href="/condos/Sunset-Bay">Sunset Bay</a></li>
+                <li><a target="_blank" href="/condos/Sunset-Bay-at-Bon-Secour">Sunset Bay at Bon Secour</a></li>
+                <li><a target="_blank" href="/condos/Surfrider">Surfrider</a></li>
+                <li><a target="_blank" href="/condos/Surfside-Shores">Surfside Shores</a></li>
+                <li><a target="_blank" href="/condos/Surf-&-Racquet">Surf & Racquet</a></li>
+                <li><a target="_blank" href="/condos/Three-Cs">Three C's</a></li>
+                <li><a target="_blank" href="/condos/Tradewinds-West">Tradewinds West</a></li>
+                <li><a target="_blank" href="/condos/Tropic-Isles">Tropic Isles</a></li>
+                <li><a target="_blank" href="/condos/Tropical-Winds">Tropical Winds</a></li>
+                <li><a target="_blank" href="/condos/Twelve-Palms">Twelve Palms</a></li>
+                <li><a target="_blank" href="/condos/The-Village">The Village</a></li>
+                <li><a target="_blank" href="/condos/Village-by-the-Gulf">Village by the Gulf</a></li>
+                <li><a target="_blank" href="/condos/Westwind">Westwind</a></li>
+                <li><a target="_blank" href="/condos/Whaler">Whaler</a></li>
+                <li><a target="_blank" href="/condos/Windjammer">Windjammer</a></li>
+                <li><a target="_blank" href="/condos/Edgewater">Edgewater</a></li>
+                <li><a target="_blank" href="/condos/Windmill-Ridge-East">Windmill Ridge East</a></li>
+                                
+                
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

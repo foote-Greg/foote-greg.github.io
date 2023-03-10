@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css');
+@import url('https://kit.fontawesome.com/f11d32ea83.css');
+
+/* Brand icon*/
+.twitter::before {
+    content: '\f099';
+    font-family: "Font Awesome 6 free";
+    font-weight: 400;
+}
+
+.fontawesomeicon {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(14, 48, 110);
+    font-size: 20px;
+}
+
+.page-content,
+.md-custom-code {
+    background-color: rgb(243 243 243) !important;
+}
+
+.mg-container {
+    width: 1400px;
+    background-color: rgb(243 243 243);
+}
+
+.gf-page-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 1350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(243 243 243);
+}
+
+
+
+.gf-page-container .left-container {
+    float: left;
+    width: 30%;
+    margin: 0 15px;
+}
+
+
+.gf-container {
+    background-color: #FFF;
+    border-radius: 4px 4px 0 0;
+    min-height: 80px;
+    margin-bottom: 30px;
+}
+
+.gf-page-container .right-container {
+    float: right;
+    width: 70%;
+    background-color: #FFF;
+    margin: 0 15px;
+}
+
+.gf-page-container h3 {
+    padding: 13px 16px;
+    font-size: 16px;
+    margin: 0;
+    font-family: quicksand;
+    color: #264980;
+}
+
+.separator {
+    width: 100%;
+    background-color: rgb(211, 207, 207);
+    height: 1px;
+}
+
+.stats-container {
+    padding: 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stat-container {
+    margin: 5px;
+    padding: 8px 12px;
+    width: 45%;
+}
+
+.stat-container .left-col {
+    float: left;
+    width: 40px;
+}
+
+.stat-container .right-col {
+    float: right;
+}
+
+.gf-page-container label {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    color: #264980;
+}
+
+
+.stat-container label {
+    display: block;
+    margin-bottom: 6px;
+    /*background-color: rgb(82, 219, 219); 8 */
+}
+
+.stat-container .stat-cols-container {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aqua; */
+}
+
+.stat-box-container {
+    margin: 4px 0;
+}
+
+.stat-box-container .stat-box {
+    float: left;
+    width: 12px;
+    background-color: rgb(197, 197, 197);
+    height: 16px;
+    margin: 0 1px;
+}
+
+.stat-box-container .stat-box.on {
+    background-color: rgb(84, 142, 184);
+}
+
+h1 {
+    font-family: quicksand;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #264980;
+}
+
+.building-container {
+    display: none;
+}
+
+.building-info {
+    padding: 20px;
+}
+
+.building-info .main-icon,
+.building-info-blocks {
+    display: flex;
+}
+
+.building-info .main-icon .fontawesomeicon {
+    font-size: 36px;
+}
+
+.building-info .main-icon h3 {
+    font-size: 22px;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin-left: 12px;
+}
+
+.building-info-blocks {
+    margin: 10px;
+}
+
+.building-info-blocks .building-info-block {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60px;
+    margin: auto;
+}
+
+.building-info-blocks .building-info-block label {
+    font-size: 14px;
+}
+
+.info-caption {
+    vertical-align: middle;
+    font-size: 24px;
+    color: rgb(9, 161, 17);
+}
+
+.info-caption.check-yes {
+    color: rgb(9, 161, 17);
+    font-size: 26px;
+    margin: 3px;
+}
+
+.building-info table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+.building-info table th {
+    margin: 0;
+    padding: 0;
+    border: 0px solid #FFF;
+}
+
+.building-info table th .table-header {
+    background-color: #deebff;
+    display: flex;
+    padding: 8px;
+}
+
+.building-info table th .table-header label {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: quicksand;
+}
+
+.building-info table td {
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: quicksand;
+    text-align: center;
+    padding: 8px;
+    border: 0px solid #FFF;
+}
+
+.building-info table tr:nth-child(even) {
+    background-color: rgb(243, 243, 243);
+}
+
+.building-info table td:first-child {
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: quicksand;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.caption-header {
+    display: flex;
+    width: 94%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(211, 207, 207);
+    padding-bottom: 8px;
+}
+
+.caption-header label {
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: quicksand;
+}
+
+
+ul.condo-amenities {
+    margin: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+ul.condo-amenities li {
+    background-color: #deebff;
+    padding: 6px 12px;
+    margin-right: 10px;
+    color: #264980;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.video-list {
+    display: flex;
+    margin: 20px;
+}
+
+.video-list .video {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.video-list .video label {
+    margin-top: 4px;
+    font-size: 15px;
+    font-family: quicksand;
+}
+
+.offer-box {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: quicksand;
+    padding: 20px;
+    padding-top: 0;
+    margin: 14px 0;
+}
+
+.offer-box a {
+    border: 1px solid #264980;
+    padding: 6px 12px;
+    text-decoration: none;
+    margin: 6% 2% 2%;
+    display: block;
+    background-color: #264980;
+    color: #deebff;
+    text-align: center;
+    width: 90%;
+}
+
+.offer-box img {
+    margin: 0 75px;
+}
+
+.videos-coming-soon {
+    text-align: center;
+}
